@@ -36,6 +36,9 @@
 			let value = pair[1];
 			value.change = value.p15 / value.p10;
 		}
-		console.log(map);
+		var rankingArray = Array.from(map).sort((p1, p2) => {
+			return p2[1].change - p1[1].change;
+		});
+		console.log(rankingArray);
 	});
 })();
