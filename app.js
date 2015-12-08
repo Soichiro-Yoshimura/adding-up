@@ -32,7 +32,6 @@
 	rl.resume();
 	rl.on('close', () => {
 		for (let pair of map) {
-			let prefecture = pair[0];
 			let value = pair[1];
 			value.change = value.p15 / value.p10;
 		}
